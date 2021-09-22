@@ -110,12 +110,33 @@
   font-display: swap;
 }
 
+html,
+body {
+  font-family: 'Karla';
+  padding: 0;
+  margin: 0;
+  font-size: 14px!important;
+  color: #202020;
+  background-color: #ffffff;
+  letter-spacing: 0px;
+}
+
+.ls-min {
+  letter-spacing: -1px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
 .fs-36 {
   font-size: 36px!important;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
 }
 
 .w-100 {
@@ -126,15 +147,84 @@
   margin-top: 100vh;
 }
 
+.border-radius-md {
+  border-radius: 20px;
+}
+
 .logo-white {
   filter: invert(1);
 }
 
-/* ------------------------------ */
-/* ----------  TOP NAV  --------- */
-/* ------------------------------ */
+.bg-gradient-primary {
+  background-image: linear-gradient(210deg,#002ccab4,#000014)
+}
+
+.my-xl {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.py-7px {
+  padding: 7px 0;
+}
+.services-item-title h3 {
+  letter-spacing: -0.4px;
+  font-weight: 600;
+}
+
+.text-gradient-1 {
+  background: -webkit-linear-gradient(#002197,#39b5eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-dark {
+  background: #002999;
+  background: -moz-linear-gradient(-45deg, #002999 0%, #363636 100%);
+  background: -webkit-linear-gradient(-45deg, #002999 0%, #363636 100%);
+  background: linear-gradient(170deg, #002999 0%, #363636 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002999', endColorstr='#363636',GradientType=1 );
+}
+
+.gradient-blue {
+  background: #39b5eb;
+  background: -moz-linear-gradient(-45deg, #39b5eb 0%, #88F7FF 100%);
+  background: -webkit-linear-gradient(-45deg, #39b5eb 0%, #88F7FF 100%);
+  background: linear-gradient(170deg, #39b5eb 0%, #88F7FF 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#39b5eb', endColorstr='#88F7FF',GradientType=1 );
+}
+
+.gradient-blue:hover {
+  background: #80ebf3;
+  background: -moz-linear-gradient(45deg, #80ebf3 0%, #39b5eb 100%);
+  background: -webkit-linear-gradient(45deg, #80ebf3 0%, #39b5eb 100%);
+  background: linear-gradient(-170deg, #80ebf3 0%, #39b5eb 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ebf3', endColorstr='#39b5eb',GradientType=1 );
+  transition: 0.1s all ease-in-out!important;
+}
+.gradient-green {
+  background: #23bdb8;
+  background: -moz-linear-gradient(-45deg, #23bdb8 0%, #4bffa2 100%);
+  background: -webkit-linear-gradient(-45deg, #23bdb8 0%, #4bffa2 100%);
+  background: linear-gradient(135deg, #23bdb8 0%, #4bffa2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23bdb8', endColorstr='#4bffa2',GradientType=1 );
+}
+
+.client-logo {
+  margin: 50px 0;
+  filter: grayscale(1);
+  opacity: 0.5;
+  transition: .2s all ease-in-out;
+}
+
+.client-logo:hover {
+  filter: grayscale(0);
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 .top-nav-link {
-  color: #969696;
+  color: #7e7e7e;
   transition: .3s all ease-in-out;
   cursor: pointer;
 }
@@ -142,37 +232,12 @@
 .top-nav-link.active,
 .top-nav-link.active:hover {
   color: #000000;
+  transform: scale(10);
 }
 
 .top-nav-link:hover {
-  color: #555555;
+  color: #202020;
 }
-
-/* ------------------------------ */
-/* -----------  HERO  ----------- */
-/* ------------------------------ */
-.hero-wrapper {
-  position: absolute;
-  /* position:relative; */
-  top: 0;
-  height: 90vh;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-}
-
-.home-hero-image {
-  background-image: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0, 0.1)), url('/assets/images/programmer.jpg');
-}
-
-.hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* TEST */
 
 .navbar {
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.16); }
@@ -997,7 +1062,7 @@
   box-shadow: inset 0px 0px 2px #fefefed1;
   -webkit-backdrop-filter: saturate(200%) blur(30px);
   backdrop-filter: saturate(200%) blur(30px);
-  background-color: rgba(255, 255, 255, 0.8) !important; 
+  background-color: rgba(255, 255, 255, 0.75) !important; 
 }
 .blur.blur-rounded {
   border-radius: 40px; 

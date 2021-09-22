@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react'
+import HomeHero from '../HeroContent/HomeHero'
 
 const Hero = ({ page, children }) => {
   return (
     <div 
       className="page-header relative my-0" 
       style={{
-        backgroundImage: `url('/assets/images/programmer.jpg')`,
-        minHeight: '75vh',
+        backgroundImage: `url('/assets/images/curve-1.jpeg')`,
+        minHeight: 800,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
@@ -15,12 +16,9 @@ const Hero = ({ page, children }) => {
     >
       <span className="mask bg-gradient-primary"></span>
       <div className="container">
-        <div className="row">
-          <div className="col-lg-7 text-center mx-auto">
-            <h1 className="text-white pt-3 mt-n5">Soft UI Design System Pro</h1>
-            <p className="lead text-white mt-3">Simple and innovative Web UI Kit built on top of Bootstrap 5. <br/> Join over 1.4 million developers around the world. </p>
-          </div>
-        </div>
+        { page === 'home' ? <HomeHero /> 
+          : null
+        }
       </div>
         <div className="position-absolute w-100" style={{zIndex: 1, bottom: 0}}>
           <svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shapeRendering="auto">

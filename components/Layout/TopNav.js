@@ -18,7 +18,7 @@ const TopNav = () => {
         <div className='row'>
           <div className='col-12'>
             <nav 
-              className='navbar navbar-expand-lg blur blur-rounded z-index-fixed shadow position-absolute my-3 py-2 mx-4'
+              className='navbar navbar-expand-lg blur blur-rounded z-index-fixed shadow position-absolute my-3 py-2 px-4 mx-4'
               style={{
                 top: 0,
                 left: 0,
@@ -52,8 +52,8 @@ const TopNav = () => {
                     </Link>
                   </li>
                   <li className='d-inline-block mx-3'>
-                    <Link href='/portfolio'>
-                      <span className={`top-nav-link fs-18 ${router.pathname === '/portfolio' ? 'active' : ''}`}>Portfolios</span>
+                    <Link href='/project'>
+                      <span className={`top-nav-link fs-18 ${router.pathname === '/project' ? 'active' : ''}`}>Projects</span>
                     </Link>
                   </li>
                   <li className='d-inline-block mx-3'>
