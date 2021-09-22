@@ -9,6 +9,12 @@ const CustomHead = ({ title, description, children }) => {
       <meta name="description" content={description} />
       <link rel="icon" href="/favicon.ico" />
 
+      {/* Css Style */}
+      <link rel="stylesheet" href="/assets/css/bootstrap.css" />
+      <link rel="stylesheet" href="/assets/css/scrollbar.css" />
+      <link rel="stylesheet" href="/assets/css/font-awesome.css" />
+      <link rel="stylesheet" href="/assets/css/style.css" />
+
       {/* Custom font */}
       <link rel="preload" href="/assets/fonts/Karla-Bold.ttf" as="font" crossOrigin="" />
       <link rel="preload" href="/assets/fonts/Karla-BoldItalic.ttf" as="font" crossOrigin="" />
@@ -41,6 +47,13 @@ const CustomHead = ({ title, description, children }) => {
       <meta name="description" content="Portfolio website of Muhammad Rizki Purba - React developer at PT. Whello Indonesia Prima" />
       <meta property="og:title" content="Web developer | Muhammad Rizki Purba" />
       <meta property="og:description" content="Hi, my name is Muhammad Rizki Purba. I am a React developer at PT. Whello Indonesia Prima. I will share everything about my experience as a react developer in a blog post on this website." />
+      
+      <script src="/assets/vendor/global/global.min.js"></script>
+      <script src="/assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+      <script src="/assets/vendor/deznav/deznav.min.js"></script>
+      <script src="/assets/js/custom.min.js"></script>
+      <script src="/assets/js/deznav-init.js"></script>
+
       {children}
     </Head>
   )
