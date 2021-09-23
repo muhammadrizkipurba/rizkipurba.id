@@ -9,6 +9,9 @@ const CustomHead = ({ title, description, children }) => {
       <meta name="description" content={description} />
       <link rel="icon" href="/favicon.ico" />
 
+      <link rel="stylesheet" href="/assets/css/style.css" />
+      <link rel="stylesheet" href="/assets/css/custom.css" />
+
       {/* Custom font */}
       <link rel="preload" href="/assets/fonts/Karla-Bold.ttf" as="font" crossOrigin="" />
       <link rel="preload" href="/assets/fonts/Karla-BoldItalic.ttf" as="font" crossOrigin="" />

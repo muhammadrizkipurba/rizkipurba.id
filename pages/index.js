@@ -9,6 +9,7 @@ import buildJSON from "../public/lottie/build.json";
 import ServiceSection from "../components/Home/ServiceSection";
 import GetInTouch from "../components/Home/GetInTouch";
 import ClientSection from "../components/Home/ClientSection";
+import ShortAboutMe from "../components/Home/ShortAboutMe";
 
 export default function Home() {
   return (
@@ -22,15 +23,13 @@ export default function Home() {
       </CustomHead>
 
       <BaseLayout withHero={true} page="home">
-        <main className="main">
+        <main className="px-3">
           <div className='container'>
-            <div className="my-xl">
-              <ServiceSection />
-            </div>
+            <ServiceSection />
           </div>
 
           {/* SHORT STORY ABOUT ME */}
-          
+          <ShortAboutMe />
 
           {/* CLIENTS SECTION */}
           <div className="container">

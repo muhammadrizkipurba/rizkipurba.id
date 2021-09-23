@@ -121,6 +121,58 @@ body {
   letter-spacing: 0px;
 }
 
+.my-100 {
+  margin: 100px 0;
+}
+
+.my-50 {
+  margin: 50px 0;
+}
+
+.my-75 {
+  margin: 75px 0;
+}
+
+.mt-50 {
+  margin-top: 50px!important;
+};
+
+.mb-50 {
+  margin-bottom: 50px!important;
+};
+
+.mt-100 {
+  margin-top: 100px!important;
+};
+
+.mb-100 {
+  margin-bottom: 100px!important;
+};
+
+.pt-50 {
+  padding-top: 50px!important;
+};
+
+.pb-50 {
+  padding-bottom: 50px!important;
+};
+
+.pt-100 {
+  padding-top: 100px!important;
+};
+
+.pb-100 {
+  padding-bottom: 100px!important;
+};
+
+.py-100 {
+  padding: 100px 0;
+}
+
+.py-50 {
+  padding: 50px 0;
+}
+
 .ls-min {
   letter-spacing: -1px;
 }
@@ -159,9 +211,12 @@ body {
   background-image: linear-gradient(210deg,#002ccab4,#000014)
 }
 
+.bg-light-blue {
+  background-color:#EFF7FF;
+};
+
 .my-xl {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 100px 0;
 }
 .py-7px {
   padding: 7px 0;
@@ -221,6 +276,17 @@ body {
   opacity: 1;
   cursor: pointer;
   transform: scale(1.2);
+}
+
+.text-link-blue {
+  color: #202020;
+  transition: .2s all ease-in-out;
+}
+
+.text-link-blue:hover {
+  background: -webkit-linear-gradient(#002197,#39b5eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .top-nav-link {
@@ -1173,3 +1239,150 @@ body {
     min-height: 40px; 
   }
 }
+
+.tilt {
+  transform-style: preserve-3d; }
+  .tilt .up {
+    transform: translateZ(50px) scale(0.7) !important;
+    transition: all 0.5s; }
+
+/* CARD */
+.breadcrumb-item {
+  font-size: 0.875rem; }
+  .breadcrumb-item.text-white::before {
+    color: #fff; }
+
+.breadcrumb-dark {
+  background-color: #344767; }
+  .breadcrumb-dark .breadcrumb-item {
+    font-weight: 600; }
+    .breadcrumb-dark .breadcrumb-item a {
+      color: #f8f9fa; }
+      .breadcrumb-dark .breadcrumb-item a:hover {
+        color: #fff; }
+    .breadcrumb-dark .breadcrumb-item + .breadcrumb-item::before {
+      color: #adb5bd; }
+    .breadcrumb-dark .breadcrumb-item.active {
+      color: #dee2e6; }
+
+.breadcrumb-links {
+  padding: 0;
+  margin: 0;
+  background: transparent; }
+
+.flip-vertical {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.card {
+  box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05); }
+  .card .card-header {
+    padding: 1.5rem; }
+  .card .card-body {
+    padding: 1.5rem; }
+  .card.card-plain {
+    background-color: transparent;
+    box-shadow: none; }
+  .card .card-footer {
+    padding: 1.5rem;
+    background-color: transparent; }
+
+.author {
+  display: flex; }
+  .author .name > span {
+    line-height: 1.571;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #3A416F; }
+  .author .stats {
+    font-size: 0.875rem;
+    font-weight: 400; }
+
+.card.card-background {
+  align-items: center; }
+  .card.card-background .full-background {
+    background-position: 50%;
+    background-size: cover;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 1rem; }
+  .card.card-background .card-body {
+    color: #fff;
+    position: relative;
+    z-index: 2; }
+    .card.card-background .card-body .content-center,
+    .card.card-background .card-body .content-left {
+      min-height: 330px;
+      max-width: 450px;
+      padding-top: 60px;
+      padding-bottom: 60px; }
+    .card.card-background .card-body .content-center {
+      text-align: center; }
+    .card.card-background .card-body.body-left {
+      width: 90%; }
+    .card.card-background .card-body .author .name span,
+    .card.card-background .card-body .author .name .stats {
+      color: #fff; }
+  .card.card-background:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: block;
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem; }
+  .card.card-background.card-background-mask-primary:before {
+    background: rgba(0, 0, 0, 0.1); }
+  .card.card-background.card-background-mask-primary:after {
+    background-image: linear-gradient(310deg, #002999 0%, #363636 100%);
+    opacity: .75; }
+  .card.card-background.card-background-mask-primary:hover::after {
+    opacity: .2 }
+  .card.card-background.card-background-mask-secondary:before {
+    background: rgba(0, 0, 0, 0.2); }
+  .card.card-background.card-background-mask-secondary:after {
+    background-image: linear-gradient(310deg, #627594 0%, #A8B8D8 100%);
+    opacity: .85; }
+  .card.card-background.card-background-mask-success:before {
+    background: rgba(0, 0, 0, 0.2); }
+  .card.card-background.card-background-mask-success:after {
+    background-image: linear-gradient(310deg, #17ad37 0%, #98ec2d 100%);
+    opacity: .85; }
+  .card.card-background.card-background-mask-info:before {
+    background: rgba(0, 0, 0, 0.2); }
+  .card.card-background.card-background-mask-info:after {
+    background-image: linear-gradient(310deg, #2152ff 0%, #21d4fd 100%);
+    opacity: .85; }
+  .card.card-background.card-background-mask-warning:before {
+    background: rgba(0, 0, 0, 0.2); }
+  .card.card-background.card-background-mask-warning:after {
+    background-image: linear-gradient(310deg, #f53939 0%, #fbcf33 100%);
+    opacity: .85; }
+  .card.card-background.card-background-mask-danger:before {
+    background: rgba(0, 0, 0, 0.2); }
+  .card.card-background.card-background-mask-danger:after {
+    background-image: linear-gradient(310deg, #ea0606 0%, #ff667c 100%);
+    opacity: .85; }
+  .card.card-background.card-background-mask-light:before {
+    background: rgba(0, 0, 0, 0.2); }
+  .card.card-background.card-background-mask-light:after {
+    background-image: linear-gradient(310deg, #CED4DA 0%, #EBEFF4 100%);
+    opacity: .85; }
+  .card.card-background.card-background-mask-dark:before {
+    background: rgba(0, 0, 0, 0.2); }
+  .card.card-background.card-background-mask-dark:after {
+    background-image: linear-gradient(310deg, #141727 0%, #3A416F 100%);
+    opacity: .85; }
+  .card.card-background .card-category {
+    font-size: 0.875rem;
+    font-weight: 600; }
+  .card.card-background .card-description {
+    margin-top: 24px;
+    margin-bottom: 24px; }

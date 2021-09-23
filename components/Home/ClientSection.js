@@ -20,12 +20,12 @@ const ClientSection = () => {
   ));
 
   return (
-    <div className="my-xl">
-      <h3 className="title text-gradient-1 text-center mb-0">
+    <div className='my-75'>
+      <h3 className="title text-center mb-0">
         I'm proud to have collaborated
       </h3>
-      <h3 className="title text-gradient-1 text-center">
-        with some awesome companies :
+      <h3 className="title text-center">
+        with <span className='text-gradient-1'>some awesome companies :</span>
       </h3>
       <div className="text-center mx-5">
         <div className="row mt-5 mx-auto">{render_clients_logo}</div>

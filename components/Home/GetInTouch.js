@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const GetInTouch = () => {
   return (
-    <div className="my-5 position-relative overflow-hidden">
+    <div className="position-relative overflow-hidden">
       <img
         src="/assets/images/wave-pattern.svg"
         alt="pattern-lines"
@@ -20,7 +20,7 @@ const GetInTouch = () => {
             </h3>
           </div>
           <div className="col-md-5 text-center">
-            <p className="mb-0 text-center fs-16 text-white font-w300">
+            <p className="mb-0 text-center fs-18 text-white font-w300">
               Interested in working together? <br /> We should queue up a chat.
               I’ll buy the coffee.
             </p>
@@ -29,7 +29,7 @@ const GetInTouch = () => {
             <Link href="/contact">
               <div className="btn border-0 text-black btn-round gradient-blue letter-spacing-0 hover-2x px-5">
                 <div className="d-flex align-items-center justify-content-center">
-                  <span className="font-w600 fs-16">Let's talk</span>
+                  <span className="font-w600 fs-18">Let's talk</span>
                   <img
                     src="/assets/images/coffee.svg"
                     className="ml-2"

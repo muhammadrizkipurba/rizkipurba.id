@@ -12,7 +12,7 @@ const Footer = () => {
   const social_render = social_account.map((item, idx) => (
     <li className="nav-item" key={`social-footer-${idx}`}>
       <a
-        className={`nav-link ${idx === 0 ? 'pl-0' : 'pe-1'}`}
+        className={`nav-link text-link-blue ${idx === 0 ? 'pl-0' : 'pe-1'}`}
         href={item.link}
         target="_blank"
         rel='noopener noreferrer'
@@ -36,14 +36,14 @@ const Footer = () => {
                   </h5>
                 </div>
                 <div className="mt-2">
-                  <p className="fs-16">
+                  <p className="fs-18">
                     You might think that Web Developers are not an artists,{" "}
                     <br /> but that is an extremely creative profession. <br />{" "}
                     It's Logic Based Creativity.
                   </p>
                 </div>
                 <div>
-                  <h6 className="mt-3 mb-0 fs-16 text-gradient-1 font-w600">
+                  <h6 className="mt-3 mb-0 fs-18 text-gradient-1 font-w600">
                     Find me
                   </h6>
                   <ul className="d-flex flex-row ms-n3 nav">{social_render}</ul>
@@ -51,11 +51,11 @@ const Footer = () => {
               </div>
               <div className="col-md-2 col-sm-6 col-6 mb-4 me-auto">
                 <div>
-                  <h6 className="text-gradient-1 fs-16 font-w600">Explore</h6>
+                  <h6 className="text-gradient-1 fs-18 font-w600">Explore</h6>
                   <ul className="flex-column ms-n3 nav">
                     <li className="nav-item">
                       <a
-                        className="nav-link px-0 fs-15 text-black"
+                        className="nav-link text-link-blue px-0 fs-18 text-black"
                         href="https://rizkipurba.id/about-me"
                         target="_blank"
                       >
@@ -64,7 +64,7 @@ const Footer = () => {
                     </li>
                     <li className="nav-item">
                       <a
-                        className="nav-link px-0 fs-15 text-black"
+                        className="nav-link text-link-blue px-0 fs-18 text-black"
                         href="https://rizkipurba.id/project"
                         target="_blank"
                       >
@@ -73,7 +73,7 @@ const Footer = () => {
                     </li>
                     <li className="nav-item">
                       <a
-                        className="nav-link px-0 fs-15 text-black"
+                        className="nav-link text-link-blue px-0 fs-18 text-black"
                         href="https://rizkipurba.id/blog"
                         target="_blank"
                       >
@@ -85,11 +85,11 @@ const Footer = () => {
               </div>
               <div className="col-md-2 col-sm-6 col-6 mb-4">
                 <div>
-                  <h6 className="text-gradient-1 fs-16 font-w600">Resources</h6>
+                  <h6 className="text-gradient-1 fs-18 font-w600">Resources</h6>
                   <ul className="flex-column ms-n3 nav">
                     <li className="nav-item">
                       <a
-                        className="nav-link px-0 fs-15 text-black"
+                        className="nav-link text-link-blue px-0 fs-18 text-black"
                         href="https://fonts.google.com/"
                         target="_blank"
                       >
@@ -98,7 +98,7 @@ const Footer = () => {
                     </li>
                     <li className="nav-item">
                       <a
-                        className="nav-link px-0 fs-15 text-black"
+                        className="nav-link text-link-blue px-0 fs-18 text-black"
                         href="https://iradesign.io/"
                         target="_blank"
                       >
@@ -107,7 +107,7 @@ const Footer = () => {
                     </li>
                     <li className="nav-item">
                       <a
-                        className="nav-link px-0 fs-15 text-black"
+                        className="nav-link text-link-blue px-0 fs-18 text-black"
                         href="https://fontawesome.com/"
                         target="_blank"
                       >
@@ -116,7 +116,7 @@ const Footer = () => {
                     </li>
                     <li className="nav-item">
                       <a
-                        className="nav-link px-0 fs-15 text-black"
+                        className="nav-link text-link-blue px-0 fs-18 text-black"
                         href="https://unsplash.com/"
                         target="_blank"
                       >
@@ -128,24 +128,24 @@ const Footer = () => {
               </div>
               <div className="col-md-3 col-sm-6 col-6 mb-4">
                 <div>
-                  <h6 className="text-gradient-1 fs-16 font-w600">
+                  <h6 className="text-gradient-1 fs-18 font-w600">
                     Get in touch
                   </h6>
                   <ul className="flex-column ms-n3 nav">
                     <li className="nav-item">
-                      <p className="nav-link px-0 mb-0 fs-15">
+                      <p className="nav-link cursor-default px-0 mb-0 fs-18">
                         <i className="fa fa-map-marker fs-14 mr-2"></i>
                         Bali, Indonesia.
                       </p>
                     </li>
                     <li className="nav-item">
-                      <p className="nav-link px-0 mb-0 fs-15">
+                      <p className="nav-link cursor-default px-0 mb-0 fs-18">
                         <i className="fa fa-envelope-o fs-12 mr-2"></i>
                         rizki@whello.id
                       </p>
                     </li>
                     <li className="nav-item">
-                      <p className="nav-link px-0 mb-0 fs-15">
+                      <p className="nav-link cursor-default px-0 mb-0 fs-18">
                         <i className="fa fa-whatsapp fs-14 mr-2"></i>
                         +62-82167472511
                       </p>
