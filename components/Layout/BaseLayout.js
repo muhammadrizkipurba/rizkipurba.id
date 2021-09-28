@@ -4,20 +4,13 @@ import Footer from './Footer'
 import Hero from './Hero'
 import TopNav from './TopNav'
 
-const BaseLayout = ({ withHero, page, children }) => {
+const BaseLayout = ({ withHero, heroImage, heroTitle, heroBgColor, page, children }) => {
+
   return (
     <div>
       <TopNav />
       { withHero &&
-        <Hero page={page}>
-          <div className='container mx-auto'>
-            { 
-              page === 'home' 
-              ? <HomeHero />
-              : null
-            }
-          </div>
-        </Hero>
+        <Hero page={page} heroTitle={heroTitle} heroImage={heroImage} heroBgColor={heroBgColor} />
       }
       {children}
       <Footer />

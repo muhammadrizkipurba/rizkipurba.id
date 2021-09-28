@@ -218,16 +218,44 @@ body {
 .my-xl {
   margin: 100px 0;
 }
+
 .py-7px {
   padding: 7px 0;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
 .services-item-title h3 {
   letter-spacing: -0.4px;
   font-weight: 600;
 }
 
+.ellipsis-vertical {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
 .text-gradient-1 {
   background: -webkit-linear-gradient(#002197,#39b5eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-2 {
+  background: -webkit-linear-gradient(#39b5eb,#88F7FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -248,7 +276,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#39b5eb', endColorstr='#88F7FF',GradientType=1 );
 }
 
-.gradient-blue:hover {
+.btn.gradient-blue:hover {
   background: #80ebf3;
   background: -moz-linear-gradient(45deg, #80ebf3 0%, #39b5eb 100%);
   background: -webkit-linear-gradient(45deg, #80ebf3 0%, #39b5eb 100%);
@@ -303,6 +331,10 @@ body {
 
 .top-nav-link:hover {
   color: #202020;
+}
+
+.safe-area-view {
+  height: 73px;
 }
 
 .navbar {
@@ -1161,6 +1193,10 @@ body {
   opacity: .8;
 }
 
+.px-15px {
+  padding: 0 15px!important;
+};
+
 .waves {
   position: relative;
   width: 100%;
@@ -1273,6 +1309,20 @@ body {
 .flip-vertical {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+.move-on-hover {
+  transition: .2s ease-out;
+  overflow: hidden;
+  transform-origin: 50% 0;
+  transform: perspective(1000px) rotateX(0deg) translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform,box-shadow;
+}
+
+.move-on-hover:hover {
+  transform: perspective(1000px) rotateX(4deg) translate3d(0,-4px,5px);
 }
 
 .card {

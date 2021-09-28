@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import Link from 'next/link';
+
 import moment from "moment";
 import 'moment/locale/id';
-import Link from 'next/link';
 
 const ShortAboutMe = () => {
   // const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
@@ -32,7 +33,7 @@ const ShortAboutMe = () => {
             <div className="col-md-7 d-flex align-items-center">
               <div className='mb-5' style={{zIndex: 1}}>
                 <h3 className="title">Short story about me</h3>
-                <p className='fs-18 pr-5 mt-4'>
+                <p className='fs-16 pr-5 mt-4'>
                   Hi, my name is Rizki. I'm {Math.abs(age)} yo. Now
                   I'm working at
                   <span id="company-URL">
@@ -50,7 +51,7 @@ const ShortAboutMe = () => {
                   creates client's website with React JS (one of the most famous
                   Javascript Libraries) for the client-side development. 
                 </p>
-                <p className='fs-18 pr-5 mt-2'>
+                <p className='fs-16 pr-5 mt-2'>
                   I have {Math.abs(experience)+1} years of experience as a developer and love working with MERN stack. I learn about MERN stack at 
                   <span id="company-URL">
                     <a

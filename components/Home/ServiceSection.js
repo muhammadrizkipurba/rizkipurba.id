@@ -20,7 +20,7 @@ const ServiceSection = () => {
             <div className="services-item-title">
               <h3>Front End Development</h3>
             </div>
-            <div className="fs-18" style={{ letterSpacing: "-0.4px" }}>
+            <div className="fs-16" style={{ letterSpacing: "-0.4px" }}>
               Fast load times and lag free interaction, my highest priority. My
               layouts will work on any device, big or small.
             </div>
@@ -39,7 +39,7 @@ const ServiceSection = () => {
             <div className="services-item-title">
               <h3>Back End Development</h3>
             </div>
-            <div className="fs-18" style={{ letterSpacing: "-0.4px" }}>
+            <div className="fs-16" style={{ letterSpacing: "-0.4px" }}>
               Create and implement the server-side logic to make the web app
               function working properly and optimizing the application for
               efficiency.
@@ -59,7 +59,7 @@ const ServiceSection = () => {
             <div className="services-item-title">
               <h3>Mobile Development</h3>
             </div>
-            <div className="fs-18" style={{ letterSpacing: "-0.4px" }}>
+            <div className="fs-16" style={{ letterSpacing: "-0.4px" }}>
               Strong preference for easy to use, intuitive UX/UI. Mobile Apps
               don't have to be static, I love making pages come to life.
             </div>
