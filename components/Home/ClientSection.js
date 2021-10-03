@@ -27,7 +27,7 @@ const ClientSection = () => {
       <h3 className="title text-center">
         with <span className='text-gradient-1'>some awesome companies :</span>
       </h3>
-      <div className="text-center mx-5">
+      <div className="text-center">
         <div className="row mt-5 mx-auto">{render_clients_logo}</div>
       </div>
     </div>

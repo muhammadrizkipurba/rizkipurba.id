@@ -23,13 +23,13 @@ const ShortAboutMe = () => {
   const experience = moment('12/01/2017').diff(moment(new Date()), "years");
 
   return (
-    <div style={{ margin: "0 20px" }}>
+    <div>
       <div
         className="bg-light-blue border-radius-md position-relative"
-        style={{ minHeight: 500 }}
+        // style={{ minHeight: 500 }}
       >
         <div className="container" style={{ padding: "50px 30px" }}>
-          <div className="row" style={{ height: "500px" }}>
+          <div className="row">
             <div className="col-md-7 d-flex align-items-center">
               <div className='mb-5' style={{zIndex: 1}}>
                 <h3 className="title">Short story about me</h3>
@@ -66,8 +66,8 @@ const ShortAboutMe = () => {
                 </p>
                 <Link href='/about-me'>
                   <div role='link' className='btn gradient-blue border-0 mt-4'>
-                    <span className='text-white fs-16 font-w600 mb-0'>Read more about me</span>
-                    <i className='fa fa-arrow-right fs-15 text-white ml-2'></i>
+                    <span className='text-black fs-16 font-w600 mb-0'>Read more about me</span>
+                    <i className='fa fa-arrow-right fs-15 text-black ml-2'></i>
                   </div>
                 </Link>
               </div>
@@ -97,7 +97,7 @@ const ShortAboutMe = () => {
                     backgroundImage: `url('/assets/images/me.jpg')`,
                     transform: !isHovered
                       ? "scale(1)"
-                      : "scale(1.5) translateY(-80px)",
+                      : "scale(1.5) translateY(-55px)",
                   }}
                 ></div>
                 {!isHovered && (

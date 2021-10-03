@@ -30,7 +30,7 @@ const BlogSection = () => {
     const col_grid = idx === 2 ? 'col-md-12' : idx === 1 ? 'col-md-7' : 'col-md-5';
     
     return (
-      <div className={`${col_grid} mt-md-0`} key={`blog-${idx}`}>
+      <div className={`${col_grid} mt-md-0 sm-mb-25`} key={`blog-${idx}`}>
         <a href="./sections/page-sections/hero-sections.html">
           <div className="card shadow-lg move-on-hover min-height-160 min-height-160 overflow-hidden">
             <img style={{maxHeight: idx === 2 ? 'auto' : 300}} src={`/assets/images/${item.img}`} alt=""/>
@@ -45,14 +45,14 @@ const BlogSection = () => {
   });
 
   return (
-    <div className='my-75 px-3'>
-      <div className="row">
+    <div className='my-75 sm-px-0'>
+      <div className="row flex-column-reverse-sm">
         <div className="col-lg-9">
           <div className="row">
             {render_blogs}
           </div>
         </div>
-        <div className="col-lg-3">
+        <div className="col-lg-3 sm-mb-25">
           <div className="position-sticky pb-lg-5 pb-3 mt-lg-0 mt-5 ps-2" style={{top: "100px"}}>
             <h3 className='font-w700 ls-min fs-24'>What's on my mind</h3>
             <h6 className="font-weight-normal fs-16" style={{lineHeight: 1.5}}>Get insights into Web and Mobile app development from my blogs.</h6>

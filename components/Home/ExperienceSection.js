@@ -39,7 +39,15 @@ const ExperienceSection = () => {
   ))
   
   return (
-    <div>
+    <div className='my-75'>
+      <div style={{marginBottom: 70}}>
+        <h3 className="title text-center mb-0">
+          Tools I used to build
+        </h3>
+        <h3 className="title text-center">
+          some <span className='text-gradient-1'>awesome projects :</span>
+        </h3>
+      </div>
       <div className='row'>
         {render_experiences}
       </div>

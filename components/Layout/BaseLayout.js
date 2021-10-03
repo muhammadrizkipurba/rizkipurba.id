@@ -12,6 +12,7 @@ const BaseLayout = ({ withHero, heroImage, heroTitle, heroBgColor, page, childre
       { withHero &&
         <Hero page={page} heroTitle={heroTitle} heroImage={heroImage} heroBgColor={heroBgColor} />
       }
+      <div className='safe-area-view mb-0 mb-lg-5'></div>
       {children}
       <Footer />
     </div>

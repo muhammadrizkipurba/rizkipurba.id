@@ -16,13 +16,25 @@ const Hero = ({ page, heroTitle, heroImage, heroBgColor, children }) => {
       }}
     >
       <span className={`${page === 'home' ? "mask bg-gradient-primary" : `mask ${heroBgColor}`}`}></span>
-      <div className="container">
+      <div className="container sm-mb-150">
         { page === 'home' ? 
           <HomeHero /> 
         : <HeroWithTitle title={heroTitle} /> }
       </div>
       <div className="position-absolute w-100" style={{zIndex: 1, bottom: 0}}>
-        <svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shapeRendering="auto">
+        <svg 
+          className="waves" 
+          style={{
+            position: 'relative',
+            width: '100%',
+            height: '10vh',
+            marginBottom: '-7px',
+          }} 
+          xmlns="http://www.w3.org/2000/svg" 
+          xmlnsXlink="http://www.w3.org/1999/xlink" 
+          viewBox="0 24 150 40" preserveAspectRatio="none" 
+          shapeRendering="auto"
+        >
           <defs>
             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
           </defs>
