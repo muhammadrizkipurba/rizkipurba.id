@@ -72,9 +72,10 @@ const ProjectSection = ({ projects }) => {
               Check out website applications I made using ReactJS, Node.js and other technologies.
             </h6>
             <Link href='/project'>
-              <div className='mt-3'>
-                <span className="font-w500 text-gradient-2 fs-16 cursor-pointer">See more projects</span>
-                <i className='fa fa-angle-right text-gradient-2 ml-2'></i>
+              <div className="btn border-0 text-black fs-18 btn-round gradient-blue letter-spacing-0 hover-2x mt-3 w-100">
+                <div className="d-flex align-items-center justify-content-center">
+                  <span className="font-w500 fs-16">See all projects</span>
+                </div>
               </div>
             </Link>
           </div>

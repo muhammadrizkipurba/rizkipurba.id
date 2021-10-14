@@ -22,7 +22,7 @@ const HomeHero = () => {
       }
       <div className="row align-items-center flex-column-reverse-sm mx-3">
         <div className="col-lg-7 text-center-sm">
-          <h1 className="text-white title ls-min">Hi, I'm Muhammad Rizki Purba</h1>
+          <h1 className="text-white title ls-min">Hi, I am Muhammad Rizki Purba</h1>
           <p className="lead text-white fs-18 mt-3 pr-3">
             A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks and cross-platform Mobile Apps with React Native.
           </p>

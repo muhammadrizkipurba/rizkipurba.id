@@ -4,7 +4,7 @@ import BaseLayout from '../components/Layout/BaseLayout'
 
 const Portfolio = () => {
   return (
-    <div className='container mx-auto'>
+    <div className=''>
       <CustomHead
         title='Portfolio projects | Muhammad Rizki Purba'
         description="Portfolio projects of Muhammad Rizki Purba"

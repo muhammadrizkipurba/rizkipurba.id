@@ -2,9 +2,9 @@ import React from "react";
 
 const ClientSection = () => {
   const clients = [
-    { name: "seindo", img: "seindo.png" },
+    { name: "seindo", img: "seindo-travel.png" },
     { name: "flowently", img: "flowently.png" },
-    { name: "cangkangsawit", img: "cangkangsawit.png" },
+    { name: "cangkangsawit", img: "cangkangsawit-id.png" },
     { name: "aesia", img: "aesia.png" },
   ];
 

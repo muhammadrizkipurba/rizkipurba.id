@@ -12,8 +12,6 @@ const ProjectDetails = ({ getProjectRes }) => {
     };
   }, [getProjectRes]);
 
-  console.log(project)
-
   if(!project) return null;
   
   return (
@@ -30,7 +28,6 @@ const ProjectDetails = ({ getProjectRes }) => {
         withHero={false} 
         page="project-details"
       >
-        <div className='safe-area-view'></div>
         <div className='container my-50'>
           <div className='px-15px'>
             <h1>Project details page</h1>
@@ -42,7 +39,7 @@ const ProjectDetails = ({ getProjectRes }) => {
 }
 
 export const getServerSideProps = async({params}) => {
-  const project_name = params.slug.split('-').join(' ');
+  const project_name = params.slug;
   
   const res = await fetch(`https://rizkipurba.id/api/project/single`, {
     method: "post",

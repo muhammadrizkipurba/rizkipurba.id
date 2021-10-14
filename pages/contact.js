@@ -4,7 +4,7 @@ import BaseLayout from '../components/Layout/BaseLayout'
 
 const Contact = () => {
   return (
-    <div className='container mx-auto'>
+    <div className=''>
       <CustomHead
         title='Contact | Muhammad Rizki Purba'
         description="Want to know about me or my work? Let's get in touch."

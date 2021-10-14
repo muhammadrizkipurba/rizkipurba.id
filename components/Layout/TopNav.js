@@ -9,7 +9,7 @@ const social_account= [
   {name: 'linkedin', icon_name: 'fa-linkedin', link: 'https://www.linkedin.com/in/muhammadrizkipurba/'},
 ];
 
-const TopNav = () => {
+const TopNav = ({ handleChangeSidebar }) => {
 
   const router = useRouter();
 
@@ -30,13 +30,15 @@ const TopNav = () => {
                 <img src='/logo.png' className='' height={35} />
               </a>
 
-              <button className="navbar-toggler shadow-none flex-grow-1 text-right ms-md-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon mt-2">
-                  <span className="navbar-toggler-bar bar1"></span>
-                  <span className="navbar-toggler-bar bar2"></span>
-                  <span className="navbar-toggler-bar bar3"></span>
-                </span>
-              </button>
+              <div className='flex-grow-1 text-right'>
+                <button onClick={handleChangeSidebar} className="navbar-toggler shadow-none ms-md-2">
+                  <span className="navbar-toggler-icon mt-2">
+                    <span className="navbar-toggler-bar bar1"></span>
+                    <span className="navbar-toggler-bar bar2"></span>
+                    <span className="navbar-toggler-bar bar3"></span>
+                  </span>
+                </button>
+              </div>
               
               {/* NAV LINK */}
               <div id='navigation' className='navbar-collapse w-100 pt-3 pb-2 py-lg-0 collapse'>

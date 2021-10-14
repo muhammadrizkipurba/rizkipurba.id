@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Link from 'next/link';
-
 import moment from "moment";
 import 'moment/locale/id';
+
+import DisplayLottie from "../Lotties/DisplayLottie";
+import webdevJSON from "../../public/lottie/coding.json";
 
 const ShortAboutMe = () => {
   // const [coordinates, setCoordinates] = useState({ x: 0, y: 0 });
@@ -30,10 +32,12 @@ const ShortAboutMe = () => {
       >
         <div className="container" style={{ padding: "50px 30px" }}>
           <div className="row">
+            <div className='col-12'>
+              <h3 className="title">Short story about me</h3>
+            </div>
             <div className="col-md-7 d-flex align-items-center">
               <div className='mb-5' style={{zIndex: 1}}>
-                <h3 className="title">Short story about me</h3>
-                <p className='fs-16 pr-5 mt-4'>
+                <p className='fs-16 mt-4'>
                   Hi, my name is Rizki. I'm {Math.abs(age)} yo. Now
                   I'm working at
                   <span id="company-URL">
@@ -51,7 +55,7 @@ const ShortAboutMe = () => {
                   creates client's website with React JS (one of the most famous
                   Javascript Libraries) for the client-side development. 
                 </p>
-                <p className='fs-16 pr-5 mt-2'>
+                <p className='fs-16 mt-2'>
                   I have {Math.abs(experience)+1} years of experience as a developer and love working with MERN stack. I learn about MERN stack at 
                   <span id="company-URL">
                     <a
@@ -81,49 +85,11 @@ const ShortAboutMe = () => {
                 // setCoordinates({ x: 0, y: 0});
               }}
             >
-              <div
-                className="card card-background card-background-mask-primary tilt"
-                data-tilt=""
-                style={{
-                  overflow: "hidden",
-                  // willChange: "transform",
-                  // transform: `perspective(900px) rotateX(${coordinates.x}deg) rotateY(${coordinates.y}deg) scale3d(1, 1, 1)`,
-                }}
-              >
-                <div
-                  className="full-background"
-                  style={{
-                    transition: "0.5s all ease-in-out",
-                    backgroundImage: `url('/assets/images/me.jpg')`,
-                    transform: !isHovered
-                      ? "scale(1)"
-                      : "scale(1.5) translateY(-55px)",
-                  }}
-                ></div>
-                {!isHovered && (
-                  <div className="card-body text-center d-flex flex-column align-items-center justify-content-center opacity-0">
-                    <h2
-                      className="text-white font-weight-bold up mb-0 fs-36"
-                      style={{ lineHeight: 1.6 }}
-                    >
-                      Coolest <br /> Guys
-                    </h2>
-                    <div className="icon icon-lg up my-1">
-                      <img
-                        alt="code"
-                        src="/assets/images/code-icon.svg"
-                        height={70}
-                      />
-                    </div>
-                    <h2
-                      className="text-white font-weight-bold up mb-0 fs-36"
-                      style={{ lineHeight: 1.6 }}
-                    >
-                      Write <br /> Code
-                    </h2>
-                  </div>
-                )}
-              </div>
+              <DisplayLottie 
+                height={'100%'}
+                width={'100%'}
+                animationData={webdevJSON}
+              />
             </div>
           </div>
         </div>
