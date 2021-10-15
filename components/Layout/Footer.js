@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Footer = () => {
 
@@ -29,61 +30,29 @@ const Footer = () => {
           <hr className="horizontal dark mb-5" />
           <div className="container">
             <div className="row">
-              <div className="col-md-5 mb-4 ms-auto">
+
+              {/* QUOTE */}
+              <div className="col-md-4 mb-4 ms-auto">
                 <div>
-                  <h5 className="fs-28 text-gradient-1 ls-min font-w800">
-                    Muhammad Rizki Purba
+                  <h5 className="fs-20 text-gradient-1 ls-min font-w800">
+                    RizkiDev
                   </h5>
                 </div>
                 <div className="mt-2">
                   <p className="fs-16">
-                    You might think that Web Developers are not an artists,{" "}
-                    <br /> but that is an extremely creative profession. <br />{" "}
-                    It's Logic Based Creativity.
+                    You might think that Web Developers are not an artists, but that is an extremely creative profession. It's Logic Based Creativity.
                   </p>
                 </div>
-                <div>
+                <div className='pt-0'>
                   <h6 className="mt-3 mb-0 fs-16 text-gradient-1 font-w600">
                     Find me
                   </h6>
                   <ul className="d-flex flex-row ms-n3 nav">{social_render}</ul>
                 </div>
               </div>
-              <div className="col-md-2 col-sm-6 col-6 mb-4 me-auto">
-                <div>
-                  <h6 className="text-gradient-1 fs-16 font-w600">Explore</h6>
-                  <ul className="flex-column ms-n3 nav">
-                    <li className="nav-item">
-                      <a
-                        className="nav-link text-link-blue px-0 fs-16 text-black"
-                        href="https://rizkipurba.id/about-me"
-                        target="_blank"
-                      >
-                        About me
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a
-                        className="nav-link text-link-blue px-0 fs-16 text-black"
-                        href="https://rizkipurba.id/project"
-                        target="_blank"
-                      >
-                        Projects
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a
-                        className="nav-link text-link-blue px-0 fs-16 text-black"
-                        href="https://rizkipurba.id/blog"
-                        target="_blank"
-                      >
-                        Blogs
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md-2 col-sm-6 col-6 mb-4">
+
+              {/* Resources */}
+              <div className="col-md-2 mb-4">
                 <div>
                   <h6 className="text-gradient-1 fs-16 font-w600">Resources</h6>
                   <ul className="flex-column ms-n3 nav">
@@ -126,8 +95,40 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-md-3 col-sm-6 col-6 mb-4">
+
+              {/* Explore */}
+              <div className="col-md-3 mb-4 me-auto">
                 <div>
+                  <h6 className="text-gradient-1 fs-16 font-w600">Explore</h6>
+                  <ul className="flex-column ms-n3 nav">
+                    <li className="nav-item">
+                      <Link href="/terms-and-conditions">
+                        <p className="nav-link cursor-pointer text-link-blue px-0 fs-16 text-black mb-0">
+                          Terms & Conditions
+                        </p>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link href="/privacy-policy">
+                        <p className="nav-link cursor-pointer text-link-blue px-0 fs-16 text-black mb-0">
+                          Privacy policy
+                        </p>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link href="/sitemap">
+                        <p className="nav-link cursor-pointer text-link-blue px-0 fs-16 text-black mb-0">
+                          Sitemap
+                        </p>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Get In Touch */}
+              <div className="col-md-3 mb-4">
+                <div className=''>
                   <h6 className="text-gradient-1 fs-16 font-w600">
                     Get in touch
                   </h6>
@@ -145,14 +146,14 @@ const Footer = () => {
                       </p>
                     </li>
                     <li className="nav-item">
-                      <p className="nav-link cursor-default px-0 mb-0 fs-16">
-                        <i className="fa fa-whatsapp fs-14 mr-2"></i>
-                        +62-82167472511
-                      </p>
+                      <a href='https://api.whatsapp.com/send/?phone=6282167472511' rel='noopener noreferrer' target='_blank' className="nav-link cursor-default px-0 mb-0 fs-16">
+                        <img src="/assets/images/whatsapp.png" alt='+62-82167472511' width={'150'}/>
+                      </a>
                     </li>
                   </ul>
                 </div>
               </div>
+
             </div>
           </div>
         </footer>

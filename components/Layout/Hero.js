@@ -3,12 +3,19 @@ import HeroWithTitle from '../HeroContent/HeroWithTitle'
 import HomeHero from '../HeroContent/HomeHero'
 
 const Hero = ({ page, heroTitle, heroImage, heroBgColor, children }) => {
+  
+  let shortHero = false;
+
+  if(page === 'terms-and-conditions') shortHero = true;
+  if(page === 'privacy-policy') shortHero = true;
+  heroBgColor = 'gradient-2'
+
   return (
     <div 
       className="page-header relative my-0" 
       style={{
         backgroundImage: `url(${heroImage ? heroImage : '/assets/images/curve-1.jpeg'})`,
-        minHeight: 800,
+        minHeight: shortHero ? 530 : 800,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
@@ -19,7 +26,7 @@ const Hero = ({ page, heroTitle, heroImage, heroBgColor, children }) => {
       <div className="container sm-mb-150">
         { page === 'home' ? 
           <HomeHero /> 
-        : <HeroWithTitle title={heroTitle} /> }
+        : <HeroWithTitle /> }
       </div>
       <div className="position-absolute w-100" style={{zIndex: 1, bottom: 0}}>
         <svg 

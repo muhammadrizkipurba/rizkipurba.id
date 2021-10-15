@@ -38,8 +38,7 @@ const BaseLayout = ({ withHero, heroImage, heroTitle, heroBgColor, page, childre
   return (
     <div className='' id='outer-container'>
       <Menu
-        width={isSmallScreen ? '240px' : '350px'}
-        // noOverlay
+        width={isSmallScreen ? '80%' : '450px'}
         pageWrapId={'page-wrap'}
         outerContainerId={'outer-container'}
         isOpen={isOpenSidebar}
@@ -48,34 +47,51 @@ const BaseLayout = ({ withHero, heroImage, heroTitle, heroBgColor, page, childre
         onClose={() => setIsOpenSidebar(!isOpenSidebar)}
         right={true}
       >
-        <div className='py-5'>{" "}</div>
-        <Link href="/">
-          <div className='px-3 py-2 fs-16'>
-            <p id="home" className="menu-item text-center">Home</p>
+        <div className='py-5 text-center'>
+          <div className='d-flex align-items-center justify-content-center'>
+            <div
+              style={{
+                backgroundImage: 'url("/assets/images/me-2.jpg")',
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: 'top center',
+                height: 200,
+                width: 200,
+                borderRadius: '50%'
+              }}
+            >
+            </div>
           </div>
-        </Link>
-        <Link href="/about-me">
-          <div className='px-3 py-2 fs-16'>
-            <p id="about" className="menu-item text-center">About</p>
-          </div>
-        </Link>
-        <Link href="/project">
-          <div className='px-3 py-2 fs-16'>
-            <p className="menu-item text-center">Projects</p>
-          </div>
-        </Link>
-        <Link href="/blog">
-          <div className='px-3 py-2 fs-16'>
-            <p className="menu-item text-center">Blog</p>
-          </div>
-        </Link>
-        <Link href="/contact">
-          <div className='px-3 py-2 fs-16'>
-            <p id="contact" className="menu-item text-center">Contact</p>
-          </div>
-        </Link> 
+          <h3 className='mb-0 fs-18 font-w600 lh-short mt-4'>Muhammad Rizki Purba</h3>
+          <p className='mb-0 fs-14 text-muted'>React developer</p>
+        </div>
+        <div className='px-3 py-3 fs-18'>
+          <Link href="/">
+            <p id="home" className="menu-item mb-0 font-w600 text-center">Home</p>
+          </Link>
+        </div>
+        <div className='px-3 py-3 fs-18'>
+          <Link href="/about-me">
+            <p id="about" className="menu-item mb-0 font-w600 text-center">About</p>
+          </Link>
+        </div>
+        <div className='px-3 py-3 fs-18'>
+          <Link href="/project">
+            <p className="menu-item mb-0 font-w600 text-center">Projects</p>
+          </Link>
+        </div>
+        <div className='px-3 py-3 fs-18'>
+          <Link href="/blog">
+            <p className="menu-item mb-0 font-w600 text-center">Blog</p>
+          </Link>
+        </div>
+        <div className='px-3 py-3 fs-18'>
+          <Link href="/contact">
+            <p id="contact" className="menu-item mb-0 font-w600 text-center">Contact</p>
+          </Link> 
+        </div>
         <div style={{marginTop: "100px"}}>
-          <p className='text-center fs-16 font-w600'>Find me on :</p>
+          <p className='text-center fs-18 font-w600'>Find me on :</p>
           <div className='d-flex align-items-center justify-content-center'>
             {social_account.map((item, idx) => (
               <a key={`social-${idx}`} className={idx === 0 ? '' : 'ml-3'} href={item.link}>
