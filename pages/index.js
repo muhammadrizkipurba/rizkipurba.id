@@ -13,29 +13,27 @@ import ShortAboutMe from "../components/Home/ShortAboutMe";
 import BlogSection from "../components/Home/BlogSection";
 import ProjectSection from "../components/Home/ProjectSection";
 import ExperienceSection from "../components/Home/ExperienceSection";
+import { DOMAIN } from "../utils";
 
 export default function Home({ getProjectResp }) {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    if(getProjectResp && getProjectResp.status === 200) {
-      setProjects(getProjectResp.message.data)
-    };
-  }, [getProjectResp])
+    if (getProjectResp && getProjectResp.status === 200) {
+      setProjects(getProjectResp.message.data);
+    }
+  }, [getProjectResp]);
 
   return (
     <div>
       <CustomHead
         title="Muhammad Rizki Purba | Web developer"
         description="Portfolio website of Muhammad Rizki Purba"
-      >
-        <link rel="canonical" href="https://rizkipurba.id/" />
-        <meta property="og:url" content="https://rizkipurba.id/" />
-      </CustomHead>
-
+        canonicalURL={`${DOMAIN}/`}
+      />
       <BaseLayout withHero={true} page="home">
         <main className="px-3">
-          <div className='container'>
+          <div className="container">
             <ServiceSection />
           </div>
 
@@ -46,32 +44,32 @@ export default function Home({ getProjectResp }) {
           <div className="container">
             <ClientSection />
           </div>
-          
-          {/* BLOGS */}
-          <div className="container">
-            <BlogSection />
-          </div>
-          
-          {/* BLOGS */}
-          <div className="container">
-            <ExperienceSection />
-          </div>
-          
+
           {/* PROJECTS */}
           <div className="container">
             <ProjectSection projects={projects} />
+          </div>
+
+
+          {/* TOOLS */}
+          <div className="container">
+            <ExperienceSection />
+          </div>
+
+          {/* BLOGS */}
+          <div className="container">
+            <BlogSection />
           </div>
 
           {/* GET IN TOUCH */}
           <div className="container">
             <GetInTouch />
           </div>
-
         </main>
       </BaseLayout>
     </div>
   );
-};
+}
 
 export const getServerSideProps = async () => {
   // const res = await fetch(`${API_URL}/project/all`);
@@ -81,7 +79,7 @@ export const getServerSideProps = async () => {
 
   return {
     props: {
-      getProjectResp: resJSON
-    }
+      getProjectResp: resJSON,
+    },
   };
 };

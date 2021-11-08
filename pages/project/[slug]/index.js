@@ -1,46 +1,50 @@
-import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 import BaseLayout from '../../../components/Layout/BaseLayout';
 import CustomHead from '../../../components/Reusable/CustomHead';
+import { DOMAIN } from '../../../utils';
 
-const ProjectDetails = ({ getProjectRes }) => {
+const ProjectDetails = ({ project }) => {
+  const router = useRouter();
+
+  const imageLoader = ({src}) => {
+    return src;
+  };
   
-  const [project, setProject] = useState(null);
-
-  useEffect(() => {
-    if(getProjectRes && getProjectRes.status === 200) {
-      setProject(getProjectRes.message.data)
-    };
-  }, [getProjectRes]);
-
   if(!project) return null;
-  
   return (
     <div>
       <CustomHead
         title="Muhammad Rizki Purba | Seindo Travel Project"
         description="Portfolio website of Muhammad Rizki Purba"
-      >
-        <link rel="canonical" href="https://rizkipurba.id/project/seindo-travel" />
-        <meta property="og:url" content="https://rizkipurba.id/seindo-travel" />
-      </CustomHead>
-
+        canonicalURL={`${DOMAIN}${router.asPath}`}
+      />
       <BaseLayout 
         withHero={false} 
         page="project-details"
       >
         <div className='container my-50'>
           <div className='px-15px'>
-            <h1>Project details page</h1>
+            <Image
+              loader={imageLoader}
+              src={project.mockup_img}
+              alt={project.name}
+              width={889}
+              height={500}
+            />
+            <h1 className='text-capitalize'>{project.title}</h1>
           </div>
         </div>
       </BaseLayout>
     </div>
-  )
-}
+  );
+};
 
-export const getServerSideProps = async({params}) => {
-  const project_name = params.slug;
-  
+export default ProjectDetails;
+
+export const getStaticProps = async(context) => {
+  const { slug } = context.params;
   const res = await fetch(`https://rizkipurba.id/api/project/single`, {
     method: "post",
     headers: {
@@ -50,7 +54,7 @@ export const getServerSideProps = async({params}) => {
   
     //make sure to serialize your JSON body
     body: JSON.stringify({
-      name: project_name
+      name: slug
     })
   });
 
@@ -58,9 +62,38 @@ export const getServerSideProps = async({params}) => {
 
   return {
     props: {
-      getProjectRes: respJSON
+      project: respJSON?.message?.data
     }
   };
 };
 
-export default ProjectDetails;
+export const getStaticPaths = async() => {
+  const res = await fetch(`https://rizkipurba.id/api/project/all`, {
+    method: "get",
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    }
+  });
+
+  
+  const respJSON = await res.json();
+
+  if(respJSON.status === 200) {
+    const slugs = await respJSON.message.data.map(item => item.name);
+  
+    const paths = await slugs.map(slug => ({
+      params: { slug }
+    }));
+  
+    return {
+      paths,
+      fallback: true
+    };
+  };
+  
+  return {
+    paths: [],
+    fallback: true
+  };
+};

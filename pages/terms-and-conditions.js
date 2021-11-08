@@ -7,11 +7,8 @@ const TermsAndConditions = () => {
     <div className="">
       <CustomHead
         title="Terms and Conditions | Muhammad Rizki Purba"
-        description="Please read these terms and conditions carefully before using Our Service."
+        description="Please read these terms and conditions carefully before using My Service."
       >
-        <link rel="canonical" href="https://rizkipurba.id/terms-and-condition" />
-        <meta property="og:url" content="https://rizkipurba.id/terms-and-condition" />
-      </CustomHead>
 
       <BaseLayout withHero={true} page="terms-and-conditions">
         <div className="main" style={{padding: '0 15px'}}>

@@ -9,6 +9,7 @@ import WorkExperienceTimeline from '../components/About/WorkExperienceTimeline'
 import EducationTimeline from '../components/About/EducationTimeline'
 import ContactMe from '../components/About/ContactMe'
 import MyProject from '../components/About/MyProject'
+import DOMAIN from '../utils'
 
 const AboutPage = () => {
 
@@ -17,10 +18,8 @@ const AboutPage = () => {
       <CustomHead
         title="About me | Muhammad Rizki Purba"
         description="My name is Muhammad Rizki Purba and I am currently working as a React developer. "
-      >
-        <link rel="canonical" href="https://rizkipurba.id/about-me" />
-        <meta property="og:url" content="https://rizkipurba.id/about-me" />
-      </CustomHead>
+        canonicalURL={`${DOMAIN}/about-me`}
+      />
 
       <BaseLayout>
         <div style={{ padding: "0 15px" }}>

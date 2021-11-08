@@ -1,6 +1,7 @@
 import React from 'react'
 import CustomHead from '../components/Reusable/CustomHead'
 import BaseLayout from '../components/Layout/BaseLayout'
+import { DOMAIN } from '../utils'
 
 const Portfolio = () => {
   return (
@@ -8,14 +9,12 @@ const Portfolio = () => {
       <CustomHead
         title='Portfolio projects | Muhammad Rizki Purba'
         description="Portfolio projects of Muhammad Rizki Purba"
-      >
-        <link rel="canonical" href="https://rizkipurba.id/projects" />
-        <meta property="og:url" content="https://rizkipurba.id/projects" />
-      </CustomHead>
+        canonicalURL={`${DOMAIN}/project`}
+      />
 
       <BaseLayout>
-        <div className='main'>
-          <h1>Portfolio page</h1>
+        <div className='main container'>
+
         </div>
       </BaseLayout>
     </div>

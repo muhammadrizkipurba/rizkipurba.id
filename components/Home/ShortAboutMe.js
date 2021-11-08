@@ -27,7 +27,7 @@ const ShortAboutMe = () => {
   return (
     <div>
       <div
-        className="bg-light-blue border-radius-md position-relative"
+        className="position-relative"
         // style={{ minHeight: 500 }}
       >
         <div className="container" style={{ padding: "50px 30px" }}>

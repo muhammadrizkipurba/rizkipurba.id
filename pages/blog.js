@@ -1,6 +1,7 @@
 import React from "react";
 import CustomHead from "../components/Reusable/CustomHead";
 import BaseLayout from "../components/Layout/BaseLayout";
+import { DOMAIN } from "../utils";
 
 const Blog = () => {
   return (
@@ -8,10 +9,8 @@ const Blog = () => {
       <CustomHead
         title="Blog | Muhammad Rizki Purba"
         description="This is some articles about web and mobile developer to help you to learn about web and mobile development"
-      >
-        <link rel="canonical" href="https://rizkipurba.id/blog" />
-        <meta property="og:url" content="https://rizkipurba.id/blog" />
-      </CustomHead>
+        canonicalURL={`${DOMAIN}/blog`}
+      />
 
       <BaseLayout>
         <div className="main">
