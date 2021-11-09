@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 
-const ProjectCard = ({ project, pathname }) => {
+const ProjectCard = ({ project, wrapperClassName, pathname }) => {
   return (
-    <div className={`col-md-6 mt-md-0 mb-5`}>
+    <div className={wrapperClassName ? wrapperClassName : `col-md-6 mt-md-0 mb-5`}>
       <div className="card shadow-lg move-on-hover overflow-hidden h-auto">
         <div
           style={{
@@ -26,10 +26,10 @@ const ProjectCard = ({ project, pathname }) => {
       </p>
       <Link href="/project/[slug]" as={`/project/${pathname}`}>
         <div className="mt-3">
-          <span className="font-w500 text-gradient-2 fs-16 cursor-pointer">
+          <span className="font-w500 text-gradient-1 fs-16 cursor-pointer">
             Read details
           </span>
-          <span className="text-gradient-2 ml-2">&rarr;</span>
+          <span className="text-gradient-1 ml-2">&rarr;</span>
         </div>
       </Link>
     </div>

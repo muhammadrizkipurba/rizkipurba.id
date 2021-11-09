@@ -6545,8 +6545,7 @@ button.bg-dark:focus {
 @supports (position: sticky) {
   .sticky-top {
     position: sticky;
-    top: 0;
-    z-index: 1020; } }
+    top: 0; } }
 
 .sr-only {
   position: absolute;
@@ -9044,9 +9043,6 @@ p {
 ul {
   padding: 0;
   margin: 0; }
-
-li {
-  list-style: none; }
 
 a {
   color: #7e7e7e; }

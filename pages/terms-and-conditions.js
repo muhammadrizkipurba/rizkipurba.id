@@ -8,12 +8,12 @@ const TermsAndConditions = () => {
       <CustomHead
         title="Terms and Conditions | Muhammad Rizki Purba"
         description="Please read these terms and conditions carefully before using My Service."
-      >
+      />
 
       <BaseLayout withHero={true} page="terms-and-conditions">
-        <div className="main" style={{padding: '0 15px'}}>
+        <div className="container" style={{padding: '0 15px'}}>
           <div className='mb-5'>
-            <h2 className='mb-5 text-center'>Interpretation and Definitions</h2>
+            <h2 className='mb-5 font-weight-bold fs-30'>Interpretation and Definitions</h2>
             <div className='mt-2 mb-3'>
               <h3 className='mt-3'>1. Interpretation</h3>
               <p className='mb-0 fs-16'>
@@ -113,7 +113,7 @@ const TermsAndConditions = () => {
           </div>
 
           <div className='mb-5'>
-            <h2 className='mb-3 text-center'>Acknowledgment</h2>
+            <h2 className='mb-3 fs-30 font-weight-bold fs-30'>Acknowledgment</h2>
             <p className='fs-16'>
               These are the Terms and Conditions governing the use of this Service and
               the agreement that operates between You and the Company. These Terms and
@@ -147,7 +147,7 @@ const TermsAndConditions = () => {
           </div>
 
           <div className='mb-5'>
-            <h2 className='mb-3 text-center'>Links to Other Websites</h2>
+            <h2 className='mb-3 fs-30 font-weight-bold'>Links to Other Websites</h2>
             <p className='fs-16'>
               Our Service may contain links to third-party web sites or services that
               are not owned or controlled by the Company.
@@ -165,7 +165,7 @@ const TermsAndConditions = () => {
           </div>
           
           <div className='mb-5'>
-            <h2 className='mb-3 text-center'>Termination</h2>
+            <h2 className='mb-3 fs-30 font-weight-bold'>Termination</h2>
             <p className='fs-16'>
               We may terminate or suspend Your access immediately, without prior
               notice or liability, for any reason whatsoever, including without
@@ -177,7 +177,7 @@ const TermsAndConditions = () => {
           </div>
 
           <div className='mb-5'>
-            <h2 className='mb-3 text-center'>Limitation of Liability</h2>
+            <h2 className='mb-3 fs-30 font-weight-bold'>Limitation of Liability</h2>
             <p className='fs-16'>
               Notwithstanding any damages that You might incur, the entire liability
               of the Company and any of its suppliers under any provision of this
@@ -208,7 +208,7 @@ const TermsAndConditions = () => {
           </div>
 
           <div className='mb-5'>
-            <h2 className='mb-3 text-center'>&quot;AS IS&quot; and &quot;AS AVAILABLE&quot; Disclaimer</h2>
+            <h2 className='mb-3 fs-30 font-weight-bold'>&quot;AS IS&quot; and &quot;AS AVAILABLE&quot; Disclaimer</h2>
             <p className='fs-16'>
               The Service is provided to You &quot;AS IS&quot; and &quot;AS
               AVAILABLE&quot; and with all faults and defects without warranty of any
@@ -251,7 +251,7 @@ const TermsAndConditions = () => {
           </div>
 
           <div className='mb-5'>
-            <h2 className='mb-3 text-center'>Governing Law</h2>
+            <h2 className='mb-3 fs-30 font-weight-bold'>Governing Law</h2>
             <p className='fs-16'>
               The laws of the Country, excluding its conflicts of law rules, shall
               govern this Terms and Your use of the Service. Your use of the
@@ -261,7 +261,7 @@ const TermsAndConditions = () => {
           </div>
 
           <div className='mb-5'>
-            <h2 className='mb-3 text-center'>Disputes Resolution</h2>
+            <h2 className='mb-3 fs-30 font-weight-bold'>Disputes Resolution</h2>
             <p className='fs-16'>
               If You have any concern or dispute about the Service, You agree to first
               try to resolve the dispute informally by contacting the Company.
@@ -269,7 +269,7 @@ const TermsAndConditions = () => {
           </div>
 
           <div className='mb-5'>
-            <h2 className='mb-3 text-center'>For European Union (EU) Users</h2>
+            <h2 className='mb-3 fs-30 font-weight-bold'>For European Union (EU) Users</h2>
             <p className='fs-16'>
               If You are a European Union consumer, you will benefit from any
               mandatory provisions of the law of the country in which you are resident
@@ -278,7 +278,7 @@ const TermsAndConditions = () => {
           </div>
 
           <div className='mb-5'>
-            <h2 className='mb-3 text-center'>United States Legal Compliance</h2>
+            <h2 className='mb-3 fs-30 font-weight-bold'>United States Legal Compliance</h2>
             <p className='fs-16'>
               You represent and warrant that (i) You are not located in a country that
               is subject to the United States government embargo, or that has been
@@ -289,7 +289,7 @@ const TermsAndConditions = () => {
           </div>
 
           <div className='mb-5'>
-            <h2 className='mb-3 text-center'>Severability and Waiver</h2>
+            <h2 className='mb-3 fs-30 font-weight-bold'>Severability and Waiver</h2>
             <h3 className='mt-3'>1. Severability</h3>
             <p className='fs-16'>
               If any provision of these Terms is held to be unenforceable or invalid,
@@ -309,7 +309,7 @@ const TermsAndConditions = () => {
           </div>
 
           <div className='mb-5'>
-            <h2 className='mb-3 text-center'>Translation Interpretation</h2>
+            <h2 className='mb-3 fs-30 font-weight-bold'>Translation Interpretation</h2>
             <p className='fs-16'>
               These Terms and Conditions may have been translated if We have made them
               available to You on Our Service. You agree that the original English
@@ -318,7 +318,7 @@ const TermsAndConditions = () => {
           </div>
 
           <div className='mb-5'>
-            <h2 className='mb-3 text-center'>Changes to These Terms and Conditions</h2>
+            <h2 className='mb-3 fs-30 font-weight-bold'>Changes to These Terms and Conditions</h2>
             <p className='fs-16'>
               We reserve the right, at Our sole discretion, to modify or replace these
               Terms at any time. If a revision is material We will make reasonable
@@ -335,7 +335,7 @@ const TermsAndConditions = () => {
           </div>
 
           <div className='mb-0'>
-            <h2 className='mb-3 text-center'>Contact Us</h2>
+            <h2 className='mb-3 fs-30 font-weight-bold'>Contact Us</h2>
             <p className='fs-16'>
               If you have any questions about these Terms and Conditions, You can
               contact us:

@@ -5541,8 +5541,7 @@ button.bg-dark:focus {
 @supports (position: sticky) {
   .sticky-top {
     position: sticky;
-    top: 0;
-    z-index: 1020; } }
+    top: 0; } }
 
 .sr-only {
   position: absolute;

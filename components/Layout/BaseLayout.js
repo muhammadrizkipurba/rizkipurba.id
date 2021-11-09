@@ -90,7 +90,7 @@ const BaseLayout = ({ withHero, heroImage, heroTitle, heroBgColor, page, childre
             <p id="contact" className="menu-item mb-0 font-w600 text-center">Contact</p>
           </Link> 
         </div>
-        <div style={{marginTop: "100px"}}>
+        <div style={{marginTop: "40px"}}>
           <p className='text-center fs-18 font-w600'>Find me on :</p>
           <div className='d-flex align-items-center justify-content-center'>
             {social_account.map((item, idx) => (
@@ -106,7 +106,7 @@ const BaseLayout = ({ withHero, heroImage, heroTitle, heroBgColor, page, childre
         { withHero &&
           <Hero page={page} heroTitle={heroTitle} heroImage={heroImage} heroBgColor={heroBgColor} />
         }
-        <div className='container mx-auto'>
+        <div className=''>
           <div className='safe-area-view mb-0 mb-lg-4'></div>
           {children}
           <Footer />

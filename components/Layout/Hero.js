@@ -6,23 +6,24 @@ const Hero = ({ page, heroTitle, heroImage, heroBgColor, children }) => {
   
   let shortHero = false;
 
+  if(page === 'blog') shortHero = true;
+  if(page === 'projects') shortHero = true;
   if(page === 'terms-and-conditions') shortHero = true;
   if(page === 'privacy-policy') shortHero = true;
-  heroBgColor = 'gradient-2'
 
   return (
     <div 
       className="page-header relative my-0" 
       style={{
         backgroundImage: `url(${heroImage ? heroImage : '/assets/images/curve-1.jpeg'})`,
-        minHeight: shortHero ? 530 : 800,
+        minHeight: shortHero ? 550 : 800,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         border: 0
       }}
     >
-      <span className={`${page === 'home' ? "mask bg-gradient-primary" : `mask ${heroBgColor}`}`}></span>
+      <span className={`${page === 'home' ? "mask bg-gradient-primary" : `mask ${heroBgColor ? heroBgColor : 'bg-gradient-primary'}`}`}></span>
       <div className="container sm-mb-150">
         { page === 'home' ? 
           <HomeHero /> 

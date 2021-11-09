@@ -10,7 +10,7 @@ import ServiceSection from "../components/Home/ServiceSection";
 import GetInTouch from "../components/Home/GetInTouch";
 import ClientSection from "../components/Home/ClientSection";
 import ShortAboutMe from "../components/Home/ShortAboutMe";
-import BlogSection from "../components/Home/BlogSection";
+// import BlogSection from "../components/Home/BlogSection";
 import ProjectSection from "../components/Home/ProjectSection";
 import ExperienceSection from "../components/Home/ExperienceSection";
 import { DOMAIN } from "../utils";
@@ -57,9 +57,9 @@ export default function Home({ getProjectResp }) {
           </div>
 
           {/* BLOGS */}
-          <div className="container">
+          {/* <div className="container">
             <BlogSection />
-          </div>
+          </div> */}
 
           {/* GET IN TOUCH */}
           <div className="container">
