@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://rizkipurba.id
+
+# Sitemaps
+Sitemap: https://rizkipurba.id/sitemap.xml
