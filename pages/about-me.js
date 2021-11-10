@@ -9,7 +9,7 @@ import WorkExperienceTimeline from "../components/About/WorkExperienceTimeline";
 import EducationTimeline from "../components/About/EducationTimeline";
 import ContactMe from "../components/About/ContactMe";
 import MyProject from "../components/About/MyProject";
-import DOMAIN from "../utils";
+import { DOMAIN } from "../utils/index";
 
 const AboutPage = () => {
   return (
