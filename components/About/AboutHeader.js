@@ -26,7 +26,7 @@ const AboutHeader = () => {
               </div>
               <div className='w-auto'>
                 <a 
-                  href="https://rizkipurba.id/api/muhammadrizkipurba-resume.pdf"
+                  href="https://api.rizkipurba.id/api/muhammadrizkipurba-resume.pdf"
                   className="btn border-0 text-black fs-14 btn-round gradient-blue letter-spacing-0 hover-2x mt-3 d-flex align-items-center mx-auto" 
                   rel="noopener noreferrer" 
                   style={{width: 'max-content'}}

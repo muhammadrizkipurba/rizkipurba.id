@@ -73,7 +73,7 @@ export default function Home({ getProjectResp }) {
 
 export const getServerSideProps = async () => {
   // const res = await fetch(`${API_URL}/project/all`);
-  const res = await fetch(`https://rizkipurba.id/api/project/all`);
+  const res = await fetch(`https://api.rizkipurba.id/api/project/all`);
 
   const resJSON = await res.json();
 

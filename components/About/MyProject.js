@@ -6,7 +6,7 @@ const MyProject = () => {
   const [projects, setProjects] = useState([]);
 
   const getProjects = useCallback(async() => {
-    const res = await fetch('https://rizkipurba.id/api/project/all');
+    const res = await fetch('https://api.rizkipurba.id/api/project/all');
     const resp = await res.json();
     
     if(resp.status === 200) {

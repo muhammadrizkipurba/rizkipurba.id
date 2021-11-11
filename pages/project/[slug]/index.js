@@ -168,7 +168,7 @@ export default ProjectDetails;
 
 export const getStaticProps = async(context) => {
   const { slug } = context.params;
-  const singleRes = await fetch(`https://rizkipurba.id/api/project/single`, {
+  const singleRes = await fetch(`https://api.rizkipurba.id/api/project/single`, {
     method: "post",
     headers: {
       'Accept': 'application/json',
@@ -181,7 +181,7 @@ export const getStaticProps = async(context) => {
     })
   });
 
-  const allRes = await fetch(`https://rizkipurba.id/api/project/all`, {
+  const allRes = await fetch(`https://api.rizkipurba.id/api/project/all`, {
     method: "get",
     headers: {
       'Accept': 'application/json',
@@ -206,7 +206,7 @@ export const getStaticProps = async(context) => {
 };
 
 export const getStaticPaths = async() => {
-  const res = await fetch(`https://rizkipurba.id/api/project/all`, {
+  const res = await fetch(`https://api.rizkipurba.id/api/project/all`, {
     method: "get",
     headers: {
       'Accept': 'application/json',

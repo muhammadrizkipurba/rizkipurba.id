@@ -46,7 +46,7 @@ const Portfolio = ({ projects }) => {
 export default Portfolio
 
 export const getServerSideProps = async() => {
-  const res = await fetch(`https://rizkipurba.id/api/project/all`, {
+  const res = await fetch(`https://api.rizkipurba.id/api/project/all`, {
     method: "get",
     headers: {
       'Accept': 'application/json',

@@ -27,7 +27,7 @@ const HomeHero = () => {
             A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks and cross-platform Mobile Apps with React Native.
           </p>
           <a 
-            href="https://rizkipurba.id/api/muhammadrizkipurba-resume.pdf"
+            href="https://api.rizkipurba.id/api/muhammadrizkipurba-resume.pdf"
             className="btn border-0 text-black fs-18 btn-round gradient-blue letter-spacing-0 hover-2x mt-3" 
             rel="noopener noreferrer" 
             target="_blank"
